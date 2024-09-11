@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import AboutUs from './pages/AbouteUs';
+import ContactUs from './pages/Contactus';
+import Login from './pages/Login';
+import Registration from './pages/Registration';
+import Predictions from './pages/Predictions';
+import PricePrediction from './pages/PricePrediction';
+import UserProfile from './pages/UserProfile';
+import VarietyPrediction from './pages/VarietyPrediction';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Registration />} />
+        <Route path="/predictions" element={<Predictions />} />
+        <Route path="/price-prediction" element={<PricePrediction />} />
+        <Route path="/user-profile" element={<UserProfile />} />
+        <Route path="/variety-prediction" element={<VarietyPrediction />} />
+      </Routes>
+    </Router>
   );
 }
 
