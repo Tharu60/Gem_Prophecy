@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Welcome from './pages/Welcome';
 import Home from './pages/Home';
 import AboutUs from './pages/AbouteUs';
 import ContactUs from './pages/Contactus';
@@ -17,7 +18,8 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Welcome />} /> {/* Set Welcome as the default route */}
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/login" element={<Login />} />
