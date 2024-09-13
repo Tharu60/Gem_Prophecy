@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Welcome from './pages/Welcome';
 import Home from './pages/Home';
 import AboutUs from './pages/AbouteUs';
-import ContactUs from './pages/Contactus';
+import ContactUs from './pages/ContactUs';
 import Login from './pages/Login';
 import Registration from './pages/Registration';
 import Predictions from './pages/Predictions';
