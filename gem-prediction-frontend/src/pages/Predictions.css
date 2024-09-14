@@ -1,0 +1,47 @@
+/* src/pages/Predictions.css */
+
+.predictions-container {
+    padding: 40px 20px;
+    background-color: #f7f7f7; /* Light background color for the page */
+  }
+  
+  .prediction-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content spacing within card */
+    height: 100%; /* Full height to align items properly */
+    max-width: 350px; /* Set a maximum width for the cards */
+    margin: 0 auto; /* Center the cards horizontally */
+  }
+  
+  .prediction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%; /* Ensures the image takes full width of the card */
+    height: auto; /* Keeps the aspect ratio */
+    object-fit: contain; /* Adjusts the image to be fully visible within the card */
+  }
+  
+  .card-title {
+    font-weight: bold;
+    text-align: center; /* Center-align the title */
+  }
+  
+  .card-text {
+    text-align: center; /* Center-align the text */
+  }
+  
+  .btn-primary {
+    width: 100%; /* Full width button */
+    max-width: 200px; /* Optional: set max width to maintain consistent button size */
+    margin-top: auto; /* Pushes button to the bottom */
+  }
+  

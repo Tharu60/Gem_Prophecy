@@ -1,0 +1,26 @@
+/* src/pages/Home.css */
+
+.home-container {
+    padding: 20px;
+  }
+  
+  .card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #555;
+  }
+  
+  .btn-primary {
+    margin-top: 10px;
+    display: block;
+    width: fit-content;
+    align-self: center; /* Center the button within the card */
+  }
+  
